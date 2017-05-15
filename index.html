@@ -72,7 +72,7 @@
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <!--
         
@@ -237,6 +237,65 @@
         </style>
     </div>
 
+    <div id="demo" class="step slide" data-x="1000" data-y="-1500">
+        <h1><a href="https://gruppe7.testsites.info" target="_blank">demo</a> time!</h1>
+        <style>
+            #demo {
+                color: white;
+                background-color: rgb(15,15,15);
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content: center;
+            }
+            #demo h1 {
+            max-width:50%;
+            }
+
+        </style>
+    </div>
+
+    <div id="technologies" class="step" data-scale="4" data-x="4000" data-y="-1500">
+        <h1>technologien:</h1>
+        <img id="vue" src="assets/vue.png" />
+        <img id="play" src="assets/play.png" />
+        <img id="kafka" src="assets/kafka.png" />
+        <img id="kubernetes" src="assets/kubernetes.png" />
+        <style>
+            #technologies {
+                background-color: white;
+                height: 1000px;
+                display: flex;
+                align-items:center;
+            }
+            #technologies h1 {
+                color: black;
+            }
+            #vue {
+                position:absolute;
+                top: 60px;
+            }
+            #play {
+                position:absolute;
+                top:200px;
+                left: 200px;
+                width:500px;
+            }
+            #kafka {
+                position:absolute;
+                bottom: 50px;
+                left: 117px;
+                width:500px;
+            }
+            #kubernetes {
+                width: 600px;
+                position: absolute;
+                top:600px;
+                left: 50px;
+            }
+        </style>
+    </div>
+
     <!--
         
         This is an example of step element being scaled.
@@ -246,12 +305,12 @@
         From presentation and transitions point of view it means, that it will have to be scaled
         down (4 times) to make it back to its correct size.
         
-    -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="title" class="step" data-x="10000" data-y="0" data-scale="4">
         <span class="try">then you should try</span>
         <h1>impress.js<sup>*</sup></h1>
         <span class="footnote"><sup>*</sup> no rhyme intended</span>
     </div>
+    -->
 
     <!--
         
@@ -260,8 +319,7 @@
         Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
         element should be rotated by 90 degrees clockwise.
         
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="its" class="step" data-x="10850" data-y="3000" data-rotate="90" data-scale="5">
         <p>It’s a <strong>presentation tool</strong> <br/>
         inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
         and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
@@ -270,6 +328,7 @@
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
         <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
     </div>
+    -->
 
     <!--
         
@@ -279,10 +338,10 @@
         `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
         positioned far away from us (by 3000px).
         
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="tiny" class="step" data-x="12825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
         <p>and <b>tiny</b> ideas</p>
     </div>
+    -->
 
     <!--
         
@@ -303,7 +362,6 @@
         So basically every step element has one of three classes: `future`, `present` and `past`.
         Only one current step has the `present` class.
         
-    -->
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
         <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
     </div>
@@ -320,6 +378,7 @@
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
         <p>one more thing...</p>
     </div>
+    -->
 
     <!--
         
@@ -332,11 +391,11 @@
         You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
         as `data-rotate` (these two are basically aliases).
         
-    -->
     <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
         <span class="footnote">* beat that, prezi ;)</span>
     </div>
+    -->
 
     <!--
         

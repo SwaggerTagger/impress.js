@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|VT323');
+
+body {
+    font-family: 'Helvetica';
+    min-height: 740px;
+
+    background: rgb(15, 15, 15);
+}
+
+.sp-yolo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.3em;
+}
+
+.sp-tagger {
+    font-family: 'VT323', monospace;
+    font-size: 2.2em;
+}
