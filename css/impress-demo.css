@@ -131,7 +131,7 @@ i, em { font-style: italic }
 
 .step {
     position: relative;
-    width: 1800px;
+    width: 900px;
     padding: 40px;
     margin: 20px auto;
 
@@ -175,8 +175,8 @@ i, em { font-style: italic }
 .slide {
     display: block;
 
-    width: 1200px;
-    height: 600px;
+    width: 900px;
+    height: 700px;
     padding: 40px 60px;
 
     background-color: white;

@@ -1,67 +1,5 @@
 <!doctype html>
 
-<!--
-
-    Welcome to the light side of the source, young padawan.
-
-    One step closer to learn something interesting you are...
-
-                               ____                  
-                            _.' :  `._               
-                        .-.'`.  ;   .'`.-.           
-               __      / : ___\ ;  /___ ; \      __  
-             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
-             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
-                  `:-.._J '-.-'L__ `-.-' L_..-;'     
-                    "-.__ ;  .-"  "-.  : __.-"       
-                        L ' /.======.\ ' J           
-                         "-.   "__"   .-"            
-                        __.l"-:_JL_;-";.__           
-                     .-j/'.;  ;""""  / .'\"-.        
-                   .' /:`. "-.:     .-" .';  `.      
-                .-"  / ;  "-. "-..-" .-"  :    "-.   
-             .+"-.  : :      "-.__.-"      ;-._   \  
-             ; \  `.; ;                    : : "+. ; 
-             :  ;   ; ;                    : ;  : \: 
-             ;  :   ; :                    ;:   ;  : 
-            : \  ;  :  ;                  : ;  /  :: 
-            ;  ; :   ; :                  ;   :   ;: 
-            :  :  ;  :  ;                : :  ;  : ; 
-            ;\    :   ; :                ; ;     ; ; 
-            : `."-;   :  ;              :  ;    /  ; 
-             ;    -:   ; :              ;  : .-"   : 
-             :\     \  :  ;            : \.-"      : 
-              ;`.    \  ; :            ;.'_..-=  / ; 
-              :  "-.  "-:  ;          :/."      .'  :
-               \         \ :          ;/  __        :
-                \       .-`.\        /t-""  ":-+.   :
-                 `.  .-"    `l    __/ /`. :  ; ; \  ;
-                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
-                    \ / .-"   /.     .'.' ;_:'    ;  
-                     :-""-.`./-.'     /    `.___.'   
-                           \ `t  ._  /               
-                            "-.t-._:'                
-
--->
-
-<!--
-    
-    So you'd like to know how to use impress.js?
-    
-    You've made the first, very important step - you're reading the source code.
-    And that's how impress.js presentations are built - with HTML and CSS code.
-    
-    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
-    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
-    
-    You need to design and build it by hand.
-    
-    So...
-    
-    Would you still like to know how to use impress.js?
-    
--->
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -247,8 +185,71 @@
         </style>
     </div>
 
+    <div id="technologies" class="step slide" data-scale="2" data-x="4000" data-y="-1500">
+        <h1>Big Picture</h1>
+        <img id="overview image" src="assets/overview.png" />
+        <style>
+            #technologies {
+                background-color: #3f51b5;
+            
+            }
+            #technologies h1 {
+                color: rgba(42,42,42,.57);
+            }
+            #technologies img {
+                width:100%;
+                height:auto;
+            }
+        </style>
+    </div>
+    <div id="frontend" class="step slide" data-scale="1" data-x="6000" data-y="-1500">
+        
+        <div class="logocontainer">
+            <h1>Frontend</h1>
+            <img src="assets/vue.png"/>
+            
+            <!---<img src="assets/vue-material.png"/>-->
+        </div>
+        <img src="assets/vuex.png"/>
+        <style>
+            h1 {
+                padding: 10px;
+            }
+            .logocontainer {
+                height:100px;
+                display: flex;
+                flex-direction: row;
+            }
+            .logocontainer img {
+                height: 100%;
+                padding-right: 30px;
+            }
+        </style>
+    </div>
+    <div id="backend" class="step slide" data-scale="1" data-x="7000" data-y="-1500">
+        <h1>Backend</h1>
+        <div class="logocontainer">
+        <img src="assets/scala.png"/>
+        <img src="assets/play.png" />
+        <img src="assets/Akka_toolkit_logo.svg.png"/>
+        </div>
+        <ul>
+            <li>- Scala Code läuft auf der JVM</li>
+            <li>- Möglichkeit, Java-Code einzubinden</li>
+            <li>- Funktionale Sprache mit Objektorientierung</li>
+            
+        </ul>
+        <style>
+            #backend ul {
+                margin-top: 20px;
+            }
+            #backend li {
+                padding: 5px;
+            }
+        </style>
+    </div>
 
-    <div class="step slide" data-scale="2" data-x="8000" data-y="-1500" id="kafka-slide">
+    <div class="step slide" data-scale="2" data-x="9000" data-y="-1500" id="kafka-slide">
         <img class="kafka-img" src="assets/kafka-diagram.svg" />
         <style>
             #kafka-slide {
@@ -262,8 +263,7 @@
         </style>
     </div>
 
-
-    <div id="tagging" class="step slide" data-scale="2" data-x="10000" data-y="-1500">
+    <div id="tagging" class="step slide" data-scale="2" data-x="11000" data-y="-1500">
         <div class="kafka-arrow-right">
             <span>incoming-pics</span>
             <img src="assets/arrow-straight-right.svg" alt="arrow" />
@@ -428,7 +428,7 @@
             }
         </style>
     </div>
-    <div id="kafka-messages" class="step slide" data-x="12000" data-y="-1500">
+    <div id="kafka-messages" class="step slide" data-x="13000" data-y="-1500">
         <div class="code">
             <h1>incoming-pics (from kafka)</h1>
             <pre><code class="json">{ ...
@@ -476,10 +476,10 @@
         }
     </style>
     </div>
-    <div id="kubernetes-preview" class="step" data-z="4000" data-x="13000" data-y="-1400">
+    <div id="kubernetes-preview" class="step" data-z="4000" data-x="14000" data-y="-1400">
         <img src="assets/kubernetes.png" alt="img" />
     </div>
-    <div id="kubernetes-top" class="step" data-scale="1" data-z="2000" data-x="13000" data-y="-1500">
+    <div id="kubernetes-top" class="step" data-scale="1" data-z="2000" data-x="14000" data-y="-1500">
         <img class="kubernetes-diagram" src="assets/kubernetes-diagram.svg" />
         <style>
         #kubernetes-top .kubernetes-diagram {
@@ -491,7 +491,7 @@
         }
         </style>
     </div>
-    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="13000" data-y="-1000">
+    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="14000" data-y="-1000">
     </div>
 
     <!--
