@@ -237,43 +237,66 @@
         </style>
     </div>
 
-    <div id="technologies" class="step" data-scale="4" data-x="4000" data-y="-1500">
-        <h1>technologien:</h1>
-        <img id="vue" src="assets/vue.png" />
-        <img id="play" src="assets/play.png" />
-        <img id="kafka" src="assets/kafka.png" />
-        <img id="kubernetes" src="assets/kubernetes.png" />
+    <div id="technologies" class="step slide" data-scale="4" data-x="4000" data-y="-1500">
+        <h1>Big Picture</h1>
+        <img id="overview image" src="assets/overview.png" />
         <style>
             #technologies {
-                background-color: white;
-                height: 1000px;
-                display: flex;
-                align-items:center;
+                background-color: #3f51b5;
+            
             }
             #technologies h1 {
                 color: rgba(42,42,42,.57);
             }
-            #vue {
-                position:absolute;
-                top: 60px;
+            #technologies img {
+                width:100%;
+                height:auto;
             }
-            #play {
-                position:absolute;
-                top:200px;
-                left: 200px;
-                width:500px;
+        </style>
+    </div>
+    <div id="frontend" class="step slide" data-scale="2" data-x="6000" data-y="-1500">
+        
+        <div class="logocontainer">
+            <h1>Frontend</h1>
+            <img src="assets/vue.png"/>
+            
+            <!---<img src="assets/vue-material.png"/>-->
+        </div>
+        <img src="assets/vuex.png"/>
+        <style>
+            h1 {
+                padding: 10px;
             }
-            #kafka {
-                position:absolute;
-                bottom: 50px;
-                left: 117px;
-                width:500px;
+            .logocontainer {
+                height:100px;
+                display: flex;
+                flex-direction: row;
             }
-            #kubernetes {
-                width: 600px;
-                position: absolute;
-                top:600px;
-                left: 50px;
+            .logocontainer img {
+                height: 100%;
+                padding-right: 30px;
+            }
+        </style>
+    </div>
+    <div id="backend" class="step slide" data-scale="2" data-x="7000" data-y="-1500">
+        <h1>Backend</h1>
+        <div class="logocontainer">
+        <img src="assets/scala.png"/>
+        <img src="assets/play.png" />
+        <img src="assets/Akka_toolkit_logo.svg.png"/>
+        </div>
+        <ul>
+            <li>- Scala Code läuft auf der JVM</li>
+            <li>- Möglichkeit, Java-Code einzubinden</li>
+            <li>- Funktionale Sprache mit Objektorientierung</li>
+            
+        </ul>
+        <style>
+            #backend ul {
+                margin-top: 20px;
+            }
+            #backend li {
+                padding: 5px;
             }
         </style>
     </div>
