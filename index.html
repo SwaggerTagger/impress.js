@@ -167,12 +167,11 @@
         </style>
     </div>
 
-    <div id="demo" class="step slide" data-x="2000" data-y="-1500">
-        <h1><a href="https://gruppe7.testsites.info" target="_blank">demo</a> time!</h1>
+    <div id="demo" class="step" data-x="2000" data-y="-1500">
+        <a href="https://gruppe7.testsites.info" target="_blank"><img src="assets/king-leonidas-enough-talk-show-me-a-demo.jpg"/></a>
         <style>
             #demo {
-                color: white;
-                background-color: rgb(15,15,15);
+                
                 display: flex;
                 flex-direction: row;
                 align-items:center;
@@ -190,7 +189,8 @@
         <img id="overview image" src="assets/overview.png" />
         <style>
             #technologies {
-                background-color: #3f51b5;
+                width:1600px;
+                height: 800px;
             
             }
             #technologies h1 {
@@ -564,7 +564,15 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/impressConsole.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
-impress().init();
+var api = impress();
+api.init();
+document.addEventListener('keyup', function(event){
+    console.log(event)
+    if(event.key == 'o'){
+        api.goto("overview")
+    }
+})
+
 impressConsole().init();
 </script>
 
