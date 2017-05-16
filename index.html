@@ -670,7 +670,15 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/impressConsole.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
-impress().init();
+var api = impress();
+api.init();
+document.addEventListener('keyup', function(event){
+    console.log(event)
+    if(event.key == 'o'){
+        api.goto("overview")
+    }
+})
+
 impressConsole().init();
 </script>
 
