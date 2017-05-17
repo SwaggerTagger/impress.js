@@ -1,8 +1,9 @@
 ## Overview
 Kurzer Übeblick über die Architektur und die verwendeten Technologien, auf die später im Detail eingegangen wird
 
-Frontend
+Frontend 
 - Vue
+- wird geservt über nginx
 
 von hier aus über nginx als Reverse-Proxy an das 
 Backend
