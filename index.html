@@ -450,19 +450,26 @@
 
     <div id="fazit" class="step slide" data-x="7000" data-y="3000" data-scale="9">
         <img class="seal" src="assets/seal.gif" alt="asd" />
-        <h1>lessons learned</h1>
+        <h1>Fazit / lessons learned</h1>
         <ul class="gliederung-list">
-            <li>Backend: Scala ist overkill!</li>
-            <li>Kafka: bessere Testumgebung nötig!</li>
-            <li>Azure + Kubernetes ist nicht production ready!</li>
+            <li>Backend: Scala ist overkill</li>
+            <li>Kafka: bessere Testumgebung nötig</li>
+            <li>Azure + Kubernetes ist noch nicht production ready</li>
         </ul>
-        <h1>fazit</h1>
+        
         <ul class="gliederung-list">
-            <li>VueJS ist nice!</li>
-            <li>Kafka ist nice!</li>
-            <li>Kubernetes ist nice!</li>
+            <li>VueJS</li>
+            <li>Kafka</li>
+            <li>Kubernetes</li>
         </ul>
+        <img src="assets/thumb_up.png" class="thumb-up" />
         <style>
+        #fazit .thumb-up {
+            position: absolute;
+            top: 390px;
+            left:260px;
+            width: 190px;
+        }
         #fazit {
             background-color: rgb(15,15,15);
             color:white;
@@ -479,7 +486,7 @@
         }
         #fazit .gliederung-list {
             list-style-type: disc;
-            line-height: 20px;
+            line-height: 27px !important;
             font-size:1em;
         }
         </style>
@@ -532,27 +539,7 @@
             }
         </style>
     </div>
-
-
-<<<<<<< HEAD
-    <!--
-        
-        So to summarize of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    -->
-    <div id="overview" class="step" data-x="7000" data-y="-2500" data-scale="10">
-    </div>
-    <div id="tag-categories" class="step slide" data-x="16000" data-y="-1500" data-scale="1">
+    <div id="tag-categories" class="step slide" data-x="14000" data-y="4500" data-scale="1">
         <h1>Von Darknet erkannte Objekte</h1>
         <div class="chip">
             <span>aeroplane</span>
@@ -652,9 +639,7 @@
             }
         </style>
     </div>
-=======
 
->>>>>>> dac935cada491fe260b4479910a8789adf71b520
 </div>
 
 <!--
