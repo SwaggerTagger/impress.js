@@ -15,7 +15,9 @@ Backend
 4. schreibt einen Auftrag zum Taggen des Bildes in die Kafka-Event-Queue
 5. gibt dem Frontend eine Ok-Meldung, dass das Bild erfolgreich in die Warteschlange aufgenommen wurde
 
-Einer der Worker, die für das Tagging zuständig sind, nimmt den Auftrag aus der Event-Queue, laden sich das Bild aus dem Blob-Storage herunter und taggen es. Hierfür wird Darknet ein neuronales Netzwerk verwendet. 
+Einer der Arbeitsprozesse, die für das Tagging zuständig sind, nimmt den Auftrag aus der Event-Queue, laden sich das Bild aus dem Blob-Storage herunter und taggen es. Hierfür wird Darknet ein neuronales Netzwerk verwendet. 
 Wenn das Taggen beendet ist, wird das Ergebnis in zurück nach Kafka geschrieben
 
 Im Play-Server werden diese Ergebnisse ausgelesen, in die Postgres-Datenbank geschrieben und mithilfe von Server Sent Events dem Frontend mitgeteilt, dass ein Bild erfolgreich getaggt wurde.
+
+Für das Starten und Verwalten der einzelnen Container verwenden wir Kubernetes
