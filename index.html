@@ -184,7 +184,7 @@
         </style>
     </div>
 
-    <div id="technologies" class="step slide" data-scale="2" data-x="4000" data-y="-1500">
+    <div id="technologies" class="step slide" data-scale="2" data-x="6000" data-y="-1500">
         <h1>Big Picture</h1>
         <img id="overview image" src="assets/overview.png" />
         <style>
@@ -202,53 +202,6 @@
             }
         </style>
     </div>
-    <div id="frontend" class="step slide" data-scale="1" data-x="6000" data-y="-1500">
-        
-        <div class="logocontainer">
-            <h1>Frontend</h1>
-            <img src="assets/vue.png"/>
-            
-            <!---<img src="assets/vue-material.png"/>-->
-        </div>
-        <img src="assets/vuex.png"/>
-        <style>
-            h1 {
-                padding: 10px;
-            }
-            .logocontainer {
-                height:100px;
-                display: flex;
-                flex-direction: row;
-            }
-            .logocontainer img {
-                height: 100%;
-                padding-right: 30px;
-            }
-        </style>
-    </div>
-    <div id="backend" class="step slide" data-scale="1" data-x="7000" data-y="-1500">
-        <h1>Backend</h1>
-        <div class="logocontainer">
-        <img src="assets/scala.png"/>
-        <img src="assets/play.png" />
-        <img src="assets/Akka_toolkit_logo.svg.png"/>
-        </div>
-        <ul>
-            <li>- Scala Code läuft auf der JVM</li>
-            <li>- Möglichkeit, Java-Code einzubinden</li>
-            <li>- Funktionale Sprache mit Objektorientierung</li>
-            
-        </ul>
-        <style>
-            #backend ul {
-                margin-top: 20px;
-            }
-            #backend li {
-                padding: 5px;
-            }
-        </style>
-    </div>
-
     <div class="step slide" data-scale="2" data-x="9000" data-y="-1500" id="kafka-slide">
         <img class="kafka-img" src="assets/kafka-diagram.svg" />
         <style>
@@ -476,10 +429,10 @@
         }
     </style>
     </div>
-    <div id="kubernetes-preview" class="step" data-z="4000" data-x="14000" data-y="-1400">
+    <div id="kubernetes-preview" class="step" data-z="4000" data-x="14500" data-y="-400">
         <img src="assets/kubernetes.png" alt="img" />
     </div>
-    <div id="kubernetes-top" class="step" data-scale="1" data-z="2000" data-x="14000" data-y="-1500">
+    <div id="kubernetes-top" class="step" data-scale="1" data-z="2000" data-x="14500" data-y="-500">
         <img class="kubernetes-diagram" src="assets/kubernetes-diagram.svg" />
         <style>
         #kubernetes-top .kubernetes-diagram {
@@ -491,22 +444,96 @@
         }
         </style>
     </div>
-    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="14000" data-y="-1000">
+    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="14500" data-y="-000">
     </div>
 
 
-
-    <div id="overview" class="step" data-x="7500" data-y="1500" data-scale="10">
-    </div>
     <div id="fazit" class="step slide" data-x="7000" data-y="3000" data-scale="9">
-        <h1>Fazit & Lessons learned</h1>
+        <img class="seal" src="assets/seal.gif" alt="asd" />
+        <h1>lessons learned</h1>
+        <ul class="gliederung-list">
+            <li>Backend: Scala ist overkill!</li>
+            <li>Kafka: bessere Testumgebung nötig!</li>
+            <li>Azure + Kubernetes ist nicht production ready!</li>
+        </ul>
+        <h1>fazit</h1>
+        <ul class="gliederung-list">
+            <li>VueJS ist nice!</li>
+            <li>Kafka ist nice!</li>
+            <li>Kubernetes ist nice!</li>
+        </ul>
         <style>
         #fazit {
             background-color: rgb(15,15,15);
             color:white;
+            line-height:50px;
+            font-family: monospace;
+        }
+        .seal {
+            position:absolute;
+            right: 40px;
+            bottom: 120px;
+        }
+        #fazit h1 {
+            font-size:1.5em;
+        }
+        #fazit .gliederung-list {
+            list-style-type: disc;
+            line-height: 20px;
+            font-size:1em;
         }
         </style>
     </div>
+    <div id="overview" class="step" data-x="7500" data-y="1500" data-scale="10">
+    </div>
+    <div id="frontend" class="step slide" data-scale="1" data-x="14000" data-y="2500">
+        
+        <div class="logocontainer">
+            <h1>Frontend</h1>
+            <img src="assets/vue.png"/>
+            
+            <!---<img src="assets/vue-material.png"/>-->
+        </div>
+        <img src="assets/vuex.png"/>
+        <style>
+            h1 {
+                padding: 10px;
+            }
+            .logocontainer {
+                height:100px;
+                display: flex;
+                flex-direction: row;
+            }
+            .logocontainer img {
+                height: 100%;
+                padding-right: 30px;
+            }
+        </style>
+    </div>
+    <div id="backend" class="step slide" data-scale="1" data-x="14000" data-y="3500">
+        <h1>Backend</h1>
+        <div class="logocontainer">
+        <img src="assets/scala.png"/>
+        <img src="assets/play.png" />
+        <img src="assets/Akka_toolkit_logo.svg.png"/>
+        </div>
+        <ul>
+            <li>- Scala Code läuft auf der JVM</li>
+            <li>- Möglichkeit, Java-Code einzubinden</li>
+            <li>- Funktionale Sprache mit Objektorientierung</li>
+            
+        </ul>
+        <style>
+            #backend ul {
+                margin-top: 20px;
+            }
+            #backend li {
+                padding: 5px;
+            }
+        </style>
+    </div>
+
+
 
 </div>
 
