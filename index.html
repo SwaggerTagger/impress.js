@@ -189,7 +189,7 @@
         <img id="overview image" src="assets/overview.png" />
         <style>
             #technologies {
-                width:1600px;
+                width:1400px;
                 height: 800px;
             
             }
@@ -382,7 +382,7 @@
         </style>
     </div>
     <div id="kafka-messages" class="step slide" data-x="13000" data-y="-1500">
-        <div class="code">
+        <div id="incoming-pics-code" class="code">
             <h1>incoming-pics (from kafka)</h1>
             <pre><code class="json">{ ...
   "imageId": "01f3939d-...-36619def969b",
@@ -422,6 +422,9 @@
         #predictions-to-kafka {
             margin-top:15px;
         }
+        #incoming-pics-code {
+            margin-top:-40px;
+        }
         #kafka-messages h1 {
             color:white;
             font-size: 0.8em;
@@ -437,14 +440,14 @@
         <style>
         #kubernetes-top .kubernetes-diagram {
             position:absolute;
-            top:-550px;
+            top:-540px;
         }
         #kubernetes-top.past {
             opacity:initial;
         }
         </style>
     </div>
-    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="14500" data-y="-000">
+    <div id="kubernetes-bottom" class="step" data-scale="1" data-z="2000" data-x="14500" data-y="150">
     </div>
 
 
